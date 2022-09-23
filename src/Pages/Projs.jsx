@@ -40,7 +40,7 @@ function Projs() {
           </div>
         </div>
 
-        <h3>I progetti:</h3>
+        <h3 style={{fontWeight:600}}>I progetti:</h3>
 
         <div className="progetti row">
           {
