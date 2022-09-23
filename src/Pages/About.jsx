@@ -79,16 +79,16 @@ function About() {
           <h3>Sviluppo:</h3>
           <div className="row">
             <div className="col l3 m12 s12">
-              <PersonCard image={imgerik} cognome='Ricci' nome={'Erik'} testo={'Programmatore sviluppatore ligure'}></PersonCard>
+              <PersonCard image={imgerik} cognome='Ricci' nome={'Erik'} testo={'Web developer e programmatore Android, C/C++ e Java'}></PersonCard>
             </div>
             <div className="col l3 m12 s12">
               <PersonCard image={imgomar} cognome='Jerbi' nome={'Omar'} email='omarjerbi98@gmail.com' link='https://github.com/Omar-jerbi' testo={'Programmatore con la passione per lo sviluppo full stack di siti web, la messa in funzione di dispositivi IOT e la progettatzione hardware tramite l"interazione con micro-computer e microcontrollori Hardwino a Raspberry'}></PersonCard>
             </div>
             <div className="col l3 m12 s12">
-              <PersonCard image={imgglucai} cognome='Insinna' nome={'Luca'} testo={'Programmatore che si occupa della realizzazione full stack di siti web e assistenza informatica E-mail: luca.insinna00@gmail.com Github: github.com/Luca-Insinna'}></PersonCard>
+              <PersonCard image={imgglucai} cognome='Insinna' nome={'Luca'} email='luca.insinna00@gmail.com'  link='https://github.com/Luca-Insinna' testo={'Programmatore che si occupa della realizzazione full stack di siti web e assistenza informatica'}></PersonCard>
             </div>
             <div className="col l3 m12 s12">
-              <PersonCard image={imggian} cognome='Napolitano' nome={'Gianluca'} testo={'Programmatore sviluppatore ligure'}></PersonCard>
+              <PersonCard image={imggian} cognome='Napolitano' nome={'Gianluca'}  email='gianluca7700@gmail.com' testo={'Programmatore con conoscenze generali ma incentrato nello studio di applicazioni web e sviluppo videoludico'}></PersonCard>
             </div>
           </div>
         </div>

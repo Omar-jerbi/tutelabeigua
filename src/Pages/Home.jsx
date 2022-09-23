@@ -24,7 +24,7 @@ function Home() {
 
       <div className="container">
         <div className="pres flow-text">
-          <p>
+          <p className='flow-text'>
             Ti diamo il benvenuto su tutelabeigua. Abbiamo raccolto i progetti degli studenti dell'universita di Genova
             inerenti alla divulgazione sui pericoli ai quali e sottoposto parco del Beigua causati dalla concreta minaccia dell'amianto.
           </p>

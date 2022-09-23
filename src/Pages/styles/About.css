@@ -17,3 +17,8 @@
     font-weight: 600;
     margin-bottom: 30px;
 }
+.flow-text{
+    color: #171717 !important;
+    font-family: "Inter", sans-serif !important;
+    font-weight: 300 !important;
+}

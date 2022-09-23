@@ -19,7 +19,7 @@ function PersonCard({ image, nome, cognome, testo, email, link }) {
               {testo}
               <br />
               <br />
-              <a href={`mailto:${email}`}>Email</a>
+              {email != null ? <a href={`mailto:${email}`}>Email</a> : ''}
               <br />
               {link != null ? <a href={link} target='_blank' rel="noreferrer">Github</a> : ''}
             </p>
