@@ -7,7 +7,7 @@ function ContentCard({ image, tit, link, titlink }) {
 
 const navigate = useNavigate();
 
-
+ 
     return (
         <div className="contentcard" style={{ backgroundImage: `url(${image})` }}>
             <div className="main-card">

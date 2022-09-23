@@ -1,0 +1,8 @@
+.goupbtt a {
+    background-color: #171717;
+    padding: 8px !important;
+}
+
+.goupbtt a:hover{
+    background-color: #808080;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import img77 from '../../Img/Component 8.png'
+import GoUpBtt from '../GoUpBtt/GoUpBtt'
 
 function Footer() {
   return (
@@ -42,6 +43,9 @@ function Footer() {
           </div>
         </div>
 
+        <div className="btt-up">
+          <GoUpBtt></GoUpBtt>
+        </div>
 
       </div>
     </footer>

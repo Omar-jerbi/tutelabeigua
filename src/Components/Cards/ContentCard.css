@@ -39,3 +39,7 @@
     text-transform: uppercase;
     font-weight: 500;
 }
+
+.link-card button:focus{
+    background-color: #eaeaea;
+}

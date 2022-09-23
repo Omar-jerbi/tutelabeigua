@@ -7,6 +7,12 @@ function Navbar() {
     const [sideNav, setSideNav] = useState(false)
 
 
+    const changecolor = (e) => {
+        document.querySelectorAll('.nav-link-large').forEach((el) => { el.style.color = 'black' })
+        e.target.style.color = '#808080'
+    }
+
+
     return (
         <nav>
             <div className="row" id='mainrow'>
@@ -57,22 +63,22 @@ function Navbar() {
                 <div className="nav-menu-large col l6 hide-on-med-and-down">
                     <ul className='row'>
                         <li className='col l3'>
-                            <Link className='nav-link-large' to='/' >
+                            <Link className='nav-link-large' to='/' onClick={(e) => changecolor(e)}>
                                 Home
                             </Link>
                         </li>
                         <li className='col l3'>
-                            <Link className='nav-link-large' to='/about' >
+                            <Link className='nav-link-large' to='/about' onClick={(e) => changecolor(e)} >
                                 About us
                             </Link>
                         </li>
                         <li className='col l3'>
-                            <Link className='nav-link-large' to='/projs' >
+                            <Link className='nav-link-large' to='/projs' onClick={(e) => changecolor(e)} >
                                 Progetti
                             </Link>
                         </li>
                         <li className='col l3'>
-                            <Link className='nav-link-large' to='/tutela' style={{ padding: '25px 0 0 0' }}>
+                            <Link className='nav-link-large' to='/tutela' onClick={(e) => changecolor(e)} style={{ padding: '25px 0 0 0' }}>
                                 TutelaBeigua
                             </Link>
                         </li>
