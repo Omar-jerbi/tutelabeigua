@@ -1,5 +1,5 @@
 import img1 from '../../Img/lmp.png';
-import img2 from '../../Img/morteob.jpg';
+import img2 from '../../Img/morteob2.jpg';
 
 
 

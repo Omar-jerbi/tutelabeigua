@@ -18,32 +18,37 @@ function Navbar() {
 
 
                 <div className="nav-menu-small show-on-medium-and-down hide-on-large-only col m4 s4 left">
-                    <i class={`fa-solid fa-${!sideNav ? 'bars' : 'x'}`} onClick={() => setSideNav(!sideNav)}></i>
+                    <i class='fa-solid fa-bars' onClick={() => setSideNav(true)}></i>
                     <div className={`nav-links-small${sideNav ? ' show' : ''}`}>
                         <ul className='row'>
                             <li className='col s12 m12'>
-                                <Link className='nav-link-small' to='/'  onClick={() => setSideNav(false)}>
+                                <div className="close-nav">
+                                    <i className="fa-solid fa-x" onClick={() => setSideNav(false)}></i>
+                                </div>
+                            </li>
+                            <li className='col s12 m12'>
+                                <Link className='nav-link-small' to='/' onClick={() => setSideNav(false)}>
                                     Home
                                 </Link></li>
                             <li className='col s12 m12'>
-                                <Link className='nav-link-small' to='/about'  onClick={() => setSideNav(false)}>
+                                <Link className='nav-link-small' to='/about' onClick={() => setSideNav(false)}>
                                     About us
                                 </Link>
                             </li>
                             <li className='col s12 m12'>
-                                <Link className='nav-link-small' to='/projs'  onClick={() => setSideNav(false)}>
+                                <Link className='nav-link-small' to='/projs' onClick={() => setSideNav(false)}>
                                     Progetti
                                 </Link>
                             </li>
                             <li className='col s12 m12'>
-                                <Link className='nav-link-small' to='/tutela'  onClick={() => setSideNav(false)}>
+                                <Link className='nav-link-small' to='/tutela' onClick={() => setSideNav(false)}>
                                     TutelaBeigua
                                 </Link>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div className="nav-title-small how-on-medium-and-down hide-on-large-only col m8 s8 right">
+                <div className="nav-title-small show-on-medium-and-down hide-on-large-only col m8 s8 right">
                     <h4 className='right' id='titolo-big'>tutela<span style={{ color: 'grey' }}>beigua</span></h4>
                 </div>
 
@@ -67,7 +72,7 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='col l3'>
-                            <Link className='nav-link-large' to='/tutela' style={{padding:'25px 0 0 0'}}>
+                            <Link className='nav-link-large' to='/tutela' style={{ padding: '25px 0 0 0' }}>
                                 TutelaBeigua
                             </Link>
                         </li>
