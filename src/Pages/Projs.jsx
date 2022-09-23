@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import PageBanner from '../Components/PageBanner/PageBanner'
 import ContentCard from '../Components/Cards/ContentCard'
 
@@ -6,11 +6,16 @@ import img from '../Img/tramonto.png'
 import lab from '../Img/LABORATORIO DI web design.png'
 import './styles/projs.css'
 
-import './ProjList'
 import { Projlist } from './ProjList'
 
 
 function Projs() {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  })
+
+
   return (
     <div className="projs">
       <PageBanner pagetitle='I progetti' image={img}></PageBanner>
@@ -42,7 +47,7 @@ function Projs() {
             Projlist.map((v, k) => {
               return (
                 <div className="col s12 m6 l4">
-                  <ContentCard image={v.image} tit={v.tit} titlink='Info' link={'/proj/'+k.toString()}></ContentCard>
+                  <ContentCard image={v.image} tit={v.tit} titlink='Info' link={'/proj/' + k.toString()}></ContentCard>
                 </div>
               )
             })

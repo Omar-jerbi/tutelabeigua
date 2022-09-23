@@ -1,0 +1,43 @@
+.proj-tit-link{
+    margin-top: 40px;
+    border: 4px solid #979797;
+    color: #979797;
+    text-align: center;
+    border-radius: 30px 30px 1px 30px;
+    padding: 25px;
+}
+
+
+.proj-pres{
+    color: #171717;
+}
+
+.proj-pres h3{
+    font-weight: 600;
+}
+
+.proj-gruppo h3{
+    font-weight: 600;
+}
+
+.sw-why{
+    border: 2px solid #171717;
+    border-radius: 30px 30px 1px 30px;
+    padding: 20px 10px; 
+    position: relative;
+}
+
+
+.divider-large{
+    width: 2px;
+    height: 90%;
+    background-color: #171717;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+}
+
+.divider-sm-med{
+    height: 2px;
+    background-color: #171717;
+}

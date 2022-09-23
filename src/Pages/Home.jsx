@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import ContentCard from '../Components/Cards/ContentCard'
 import PageBanner from '../Components/PageBanner/PageBanner'
 import ParagrafoHome from '../Components/ParagrafoHome/ParagrafoHome'
@@ -11,6 +11,13 @@ import card77 from '../Img/77card.jpg'
 import './styles/Home.css'
 
 function Home() {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  })
+
+
+
   return (
     <div className="home">
       <PageBanner pagetitle='Tuteliamo il Beigua' image={img}></PageBanner>

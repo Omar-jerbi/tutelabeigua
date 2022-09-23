@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import PageBanner from '../Components/PageBanner/PageBanner'
 import PersonCard from '../Components/Cards/PersonCard'
 import imgbanner from '../Img/bannerinfo.jpg'
@@ -15,6 +15,16 @@ import SingleFaq from '../Components/SingleFaq/SingleFaq'
 
 
 function About() {
+
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  })
+
+
+  
+
+
   return (
     <div className="about">
 
