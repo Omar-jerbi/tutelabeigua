@@ -1,0 +1,57 @@
+.personcard{
+    filter: grayscale();
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.titolo-show{
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+    background-color: #eaeaea;
+    text-align: center;
+    width: 100%;
+}
+
+
+.paragrafo-hidden{
+    padding: 30px 10px;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    overflow-y:scroll;
+    background-color: white;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    border-radius: 20px;
+    transition: all 500ms;
+}
+
+.paragrafo-hidden.show{
+    top: 0;
+    z-index: 1;
+    opacity: 100;
+}
+
+.paragrafo-hidden p{
+    font-size: 1.1em;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.paragrafo-hidden::-webkit-scrollbar{
+    background: rgb(160, 158, 158);
+    width: 8px;  
+}
+
+
+.paragrafo-hidden::-webkit-scrollbar-thumb{
+    background: rgb(0, 0, 0);
+}

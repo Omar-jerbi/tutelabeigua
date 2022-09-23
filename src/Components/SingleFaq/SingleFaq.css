@@ -1,0 +1,31 @@
+.singlefaq {
+    position: relative;
+}
+
+.titolo-sf {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px 20px 5px 20px;
+    z-index: 2;
+}
+
+.testo-sf {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    border-radius: 20px 5px 20px 20px;
+    transition: all 400ms;
+    /* display: none; */
+    height: 0;
+    opacity: 0;
+
+}
+
+.testo-sf.show {
+    /* display: block; */
+    transform: translateY(-20px);
+    opacity: 1;
+    height: auto;
+}

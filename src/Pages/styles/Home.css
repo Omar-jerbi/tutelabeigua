@@ -1,0 +1,10 @@
+.paragrafi{
+    border: 0.5px solid black;
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+
+.pres{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}

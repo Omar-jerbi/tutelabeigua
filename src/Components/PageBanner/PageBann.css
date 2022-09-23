@@ -1,0 +1,21 @@
+.page-banner{
+    height: 320px;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    filter: grayscale();
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1{
+    margin-top: 0;
+}
+
+.title{
+    margin-bottom: 0px;
+    color: white;
+    background: black;
+    padding: 30px;
+    font-weight: 500;
+}

@@ -1,0 +1,19 @@
+.logo-gruppo {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pres h2 {
+    font-weight: 600;
+}
+
+.faq {
+    background-color: #EAEAEA;
+    text-align: center;
+    padding: 30px;
+}
+
+.faq-tit h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
