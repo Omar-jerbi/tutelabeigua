@@ -1,4 +1,5 @@
-import React, { useLayoutEffect } from 'react'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useLayoutEffect, useState } from 'react'
 import PageBanner from '../Components/PageBanner/PageBanner'
 import PersonCard from '../Components/Cards/PersonCard'
 import imgbanner from '../Img/bannerinfo.jpg'
@@ -12,9 +13,23 @@ import imgomar from '../Img/omarj.jpg'
 import imgglucai from '../Img/lucai.png'
 import imggian from '../Img/gianlucan.jpeg'
 import SingleFaq from '../Components/SingleFaq/SingleFaq'
+import Cookies from 'universal-cookie';
+
+
+
+
+
+
+
+
 
 
 function About() {
+
+
+  const [popUp, setPopUp] = useState('block')
+  const [cookie, setCookie] = useState(new Cookies('pop', popUp, { path: '/' }))
+
 
 
   useLayoutEffect(() => {
@@ -22,11 +37,44 @@ function About() {
   })
 
 
-  
+  const setCookiev = () => {
+    let d = new Date();
+    // dura 5 minuti
+    d.setTime(d.getTime() + (5 * 60 * 1000));
+    cookie.set('pop', 'none', { path: "/", expires: d })
+    setPopUp('none')
+  }
 
 
   return (
     <div className="about">
+
+      <div className="pop-up-about" style={{ display: cookie.get('pop') }}>
+        <div className="pop-up-about-main">
+          <div className="pop-up-about-tit valign-wrapper">
+            <h4 className='center-align'>Iscriviti alla nostra newsletter</h4>
+          </div>
+          <div className="pop-up-about-mail">
+            <input type="email" placeholder='latua@email.abc' />
+          </div>
+          <div className="pop-up-about-btts">
+            <div className="row">
+              <div className="col l6 m6 s12 center">
+                <a className="waves-effect waves-light btn" onClick={() => {
+                  setCookiev()
+                  alert('Grazie per la tua iscrizione!')
+                }}>Iscriviti</a>
+              </div>
+              <div className="col l6 m6 s12 center">
+                <a className="waves-effect waves-light btn" onClick={() => {
+                  setCookiev()
+                }}>Chiudi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <PageBanner pagetitle='About Us' image={imgbanner}></PageBanner>
 
@@ -85,10 +133,10 @@ function About() {
               <PersonCard image={imgomar} cognome='Jerbi' nome={'Omar'} email='omarjerbi98@gmail.com' link='https://github.com/Omar-jerbi' testo={'Programmatore con la passione per lo sviluppo full stack di siti web, la messa in funzione di dispositivi IOT e la progettatzione hardware tramite l"interazione con micro-computer e microcontrollori Hardwino a Raspberry'}></PersonCard>
             </div>
             <div className="col l3 m12 s12">
-              <PersonCard image={imgglucai} cognome='Insinna' nome={'Luca'} email='luca.insinna00@gmail.com'  link='https://github.com/Luca-Insinna' testo={'Programmatore che si occupa della realizzazione full stack di siti web e assistenza informatica'}></PersonCard>
+              <PersonCard image={imgglucai} cognome='Insinna' nome={'Luca'} email='luca.insinna00@gmail.com' link='https://github.com/Luca-Insinna' testo={'Programmatore che si occupa della realizzazione full stack di siti web e assistenza informatica'}></PersonCard>
             </div>
             <div className="col l3 m12 s12">
-              <PersonCard image={imggian} cognome='Napolitano' nome={'Gianluca'}  email='gianluca7700@gmail.com' testo={'Programmatore con conoscenze generali ma incentrato nello studio di applicazioni web e sviluppo videoludico'}></PersonCard>
+              <PersonCard image={imggian} cognome='Napolitano' nome={'Gianluca'} email='gianluca7700@gmail.com' testo={'Programmatore con conoscenze generali ma incentrato nello studio di applicazioni web e sviluppo videoludico'}></PersonCard>
             </div>
           </div>
         </div>
