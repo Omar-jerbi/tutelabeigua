@@ -8,8 +8,9 @@ function Navbar() {
 
 
     const changecolor = (e) => {
-        document.querySelectorAll('.nav-link-large').forEach((el) => { el.style.color = 'black' })
+        document.querySelectorAll('.nav-link-large').forEach((el) => { el.style.color = 'black'; el.style.fontWeight = 'unset' })
         e.target.style.color = '#808080'
+        e.target.style.fontWeight = '600'
     }
 
 
@@ -18,10 +19,10 @@ function Navbar() {
             <div className="row" id='mainrow'>
 
                 <div className="nav-title-large hide-on-med-and-down col l4 offset-l1">
-                    <h4 id='titolo-big'>tutela<span style={{ color: 'grey' }}>beigua</span></h4>
+                    <Link to='/'>
+                        <h4 id='titolo-big' style={{ color: '#171717' }}>tutela<span style={{ color: 'grey' }}>beigua</span></h4>
+                    </Link>
                 </div>
-
-
 
                 <div className="nav-menu-small show-on-medium-and-down hide-on-large-only col m4 s4 left">
                     <i class='fa-solid fa-bars' onClick={() => setSideNav(true)}></i>
@@ -55,7 +56,9 @@ function Navbar() {
                     </div>
                 </div>
                 <div className="nav-title-small show-on-medium-and-down hide-on-large-only col m8 s8 right">
-                    <h4 className='right' id='titolo-big'>tutela<span style={{ color: 'grey' }}>beigua</span></h4>
+                    <Link to='/'>
+                        <h4 className='right' id='titolo-big'>tutela<span style={{ color: 'grey' }}>beigua</span></h4>
+                    </Link>
                 </div>
 
 

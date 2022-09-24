@@ -28,7 +28,7 @@ function About() {
 
 
   const [popUp, setPopUp] = useState('block')
-  const [cookie, setCookie] = useState(new Cookies('pop', popUp, { path: '/' }))
+  const [cookie] = useState(new Cookies('pop', popUp, { path: '/' }))
 
 
 

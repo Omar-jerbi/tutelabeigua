@@ -1,9 +1,5 @@
-.page-banner{
+.page-banner {
     height: 320px;
-    background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-    filter: grayscale();
     text-align: center;
     padding-top: 50px;
     border-radius: 0 0 20px 20px;
@@ -11,25 +7,27 @@
 }
 
 
-.page-banner-tit-img{
+.page-banner-tit-img {
     position: relative;
     height: 520px;
 }
 
 
-.page-banner-tit{
+.page-banner-tit {
     text-align: center;
     background-color: #f9f9f9;
     color: #171717;
     padding: 40px;
     border-radius: 0 0 20px 20px;
     box-shadow: -1px 4px 2px rgb(0 0 0 / 32%);
-
+    padding-top: 100px;
 }
-.page-banner-tit h1{
+
+.page-banner-tit h1 {
     margin-top: 0;
 }
-.page-banner-img{
+
+.page-banner-img {
     position: absolute;
     height: 320px;
     width: 100%;

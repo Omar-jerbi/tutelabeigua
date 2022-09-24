@@ -5,7 +5,12 @@ function PageBanner({ pagetitle, image, titYN }) {
 
   if (titYN != null)
     return (
-      <div className="page-banner" style={{ backgroundImage: `url(${image})` }}>
+      <div className="page-banner" style={{
+        background: `linear-gradient(to top, transparent, white) , url(${image})`,
+        backgroundPositionX: 'center',
+        backgroundPositionY: 'center',
+        backgroundSize: 'cover'
+      }}>
       </div>
     )
   else {

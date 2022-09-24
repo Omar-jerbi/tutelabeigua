@@ -1,6 +1,9 @@
 nav {
     all: initial;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    position: fixed;
+    z-index: 999;
+    width: -webkit-fill-available;
 }
 
 
@@ -10,8 +13,8 @@ nav .row {
 }
 
 nav #mainrow{
-    border-bottom: 1px solid black;
     border-radius: 0 0 20px 20px;
+    box-shadow: 0px 8px 10px rgb(0 0 0 / 14%), 0px 3px 14px rgb(0 0 0 / 12%), 0px 5px 5px rgb(0 0 0 / 20%) !important;
 }
 
 
@@ -70,6 +73,7 @@ nav #mainrow{
 #titolo-big{
     text-transform: uppercase;
     font-size: 1.8em;
+    color: #171717;
 }
 
 .close-nav{

@@ -6,10 +6,9 @@ import img5 from '../Img/mesote_liberi.jpg'
 import img6 from '../Img/2025.jpg'
 import img7 from '../Img/bnbeigu.jpg'
 import img8 from '../Img/casalem.jpg'
-import img9 from '../Img/eternitCM.jpg'
+import img9 from '../Img/gruppo10_2.png'
 import img10 from '../Img/gruppovacanze.jpg'
 import img11 from '../Img/h2a.jpg'
-import img12 from '../Img/eternitCM.jpg'
 
 
 export const Projlist = [
@@ -21,8 +20,7 @@ export const Projlist = [
     { image: img6, tit: 'Beigua 2025'},
     { image: img7, tit: 'BnBeigua'},
     { image: img8, tit: 'Casale Monferrato'},
-    { image: img9, tit: 'gruppo 10'},
-    { image: img10, tit: 'gruppo vacanze'},
-    { image: img11, tit: 'povere designers'},
-    { image: img12, tit: 'gruppo 3' }
+    { image: img9, tit: "L'inferno dell'amianto"},
+    { image: img10, tit: 'BEI GUA-I'},
+    { image: img11, tit: 'H2Amianto'}
 ]

@@ -21,27 +21,27 @@ function Proj() {
 
     return (
         <div className="proj">
-            <PageBanner titYN="N" image={ProjLinks.at(current.pathname.at(current.pathname.length - 1)).banner} ></PageBanner>
+            <PageBanner titYN="N" image={ProjLinks.at(current.pathname.replace('/proj/', '')).banner} ></PageBanner>
 
             <div className="container">
 
                 <div className="proj-tit-link">
-                    <h4>{ProjLinks.at(current.pathname.at(current.pathname.length - 1)).title}</h4>
-                    <h6>{ProjLinks.at(current.pathname.at(current.pathname.length - 1)).link}</h6>
+                    <h4>{ProjLinks.at(current.pathname.replace('/proj/', '')).title}</h4>
+                    <h6>{ProjLinks.at(current.pathname.replace('/proj/', '')).link}</h6>
                 </div>
 
                 <div className="proj-pres">
                     <h3>Il progetto</h3>
                     <p className="flow-text">
-                        {ProjLinks.at(current.pathname.at(current.pathname.length - 1)).pres}
+                        {ProjLinks.at(current.pathname.replace('/proj/', '')).pres}
                     </p>
                 </div>
 
 
                 <div className="proj-gruppo">
-                    <h3>{ProjLinks.at(current.pathname.at(current.pathname.length - 1)).gruppo}</h3>
+                    <h3>{ProjLinks.at(current.pathname.replace('/proj/', '')).gruppo}</h3>
                     <p className="flow-text">{
-                        ProjLinks.at(current.pathname.at(current.pathname.length - 1)).membri.map((v,k)=>{
+                        ProjLinks.at(current.pathname.replace('/proj/', '')).membri.map((v,k)=>{
                             return(
                                 <>
                                     {v} <br />
@@ -57,7 +57,7 @@ function Proj() {
                             <h6>Software utilizzati</h6>
                             <p className="flow-text">
                                 {
-                                    ProjLinks.at(current.pathname.at(current.pathname.length - 1)).sw.map((v, k) => {
+                                    ProjLinks.at(current.pathname.replace('/proj/', '')).sw.map((v, k) => {
                                         return (
                                             <>
                                                 {v}<br />
@@ -74,7 +74,7 @@ function Proj() {
                         <div className="col s12 m12 l6 why">
                             <h6>Perchè lo avete fatto?</h6>
                             <p className="flow-text">
-                                {ProjLinks.at(current.pathname.at(current.pathname.length - 1)).why}
+                                {ProjLinks.at(current.pathname.replace('/proj/', '')).why}
                             </p>
                         </div>
                     </div>
