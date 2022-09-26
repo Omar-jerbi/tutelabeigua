@@ -148,11 +148,19 @@ function About() {
           <h3 style={{ fontWeight: 600 }}>Software e framework utilizzati:</h3>
           <ul>
             <li>
-              <p className='flow-text'>Figma</p>
-              <p className='flow-text'>React</p>
-              <p className='flow-text'>Materializa css</p>
-              <p className='flow-text'>Github</p>
-              <p className='flow-text'>AWS Route53 / S3 / Pipeline</p>
+              <p className='flow-text'>- Figma</p>
+            </li>
+            <li>
+              <p className='flow-text'>- React</p>
+            </li>
+            <li>
+              <p className='flow-text'>- Materializa css</p>
+            </li>
+            <li>
+              <p className='flow-text'>- Github</p>
+            </li>
+            <li>
+              <p className='flow-text'>- AWS Route53 / S3 / Pipeline</p>
             </li>
           </ul>
 
