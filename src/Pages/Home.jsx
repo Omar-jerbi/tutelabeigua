@@ -6,6 +6,7 @@ import img from '../Img/img1.jpg'
 import lmp from '../Img/lmp.png'
 import tb from '../Img/tb.png'
 import card77 from '../Img/77card.jpg'
+import img_sotto from '../Img/copertina_beigua.png'
 
 
 import './styles/Home.css'
@@ -51,7 +52,7 @@ function Home() {
           </div>
         </div>
 
-        <img className='img-par' src={img} alt="" srcset="" />
+        <img className='img-par' src={img_sotto} alt="" srcset="" />
 
 
         <div className="cards">
