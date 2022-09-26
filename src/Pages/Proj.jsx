@@ -54,7 +54,7 @@ function Proj() {
                 <div className="sw-why">
                     <div className="row">
                         <div className="col s12 m12 l6 sw">
-                            <h6>Software utilizzati</h6>
+                            <h6 style={{fontWeight:700}}>Software utilizzati:</h6>
                             <p className="flow-text">
                                 {
                                     ProjLinks.at(current.pathname.replace('/proj/', '')).sw.map((v, k) => {
@@ -72,7 +72,7 @@ function Proj() {
                         <div className=" col m12 s12 divider-sm-med show-on-medium-and-down hide-on-large-only"></div>
 
                         <div className="col s12 m12 l6 why">
-                            <h6>Perchè lo avete fatto?</h6>
+                            <h6 style={{fontWeight:700}}>Perchè lo avete fatto?</h6>
                             <p className="flow-text">
                                 {ProjLinks.at(current.pathname.replace('/proj/', '')).why}
                             </p>
