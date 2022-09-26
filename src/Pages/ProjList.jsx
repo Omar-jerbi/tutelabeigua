@@ -13,7 +13,7 @@ import img11 from '../Img/h2a.jpg'
 
 export const Projlist = [
     { image: img1, tit: 'I liguri muoiono prima'},
-    { image: img2, tit: 'Morte o Beigua'},
+    { image: img2, tit: 'Flash MOB Morte o Beigua'},
     { image: img3, tit: 'No alla miniera Nel parco del Beigua'},
     { image: img4, tit: 'Save your pets'},
     { image: img5, tit: 'Mesote liberi'},

@@ -7,6 +7,11 @@
     padding: 25px;
 }
 
+.proj-tit-link a{
+    color: #979797;
+    text-decoration: underline;
+}
+
 
 .proj-pres{
     color: #171717;

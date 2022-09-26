@@ -26,8 +26,8 @@ function Proj() {
             <div className="container">
 
                 <div className="proj-tit-link">
-                    <h4>{ProjLinks.at(current.pathname.replace('/proj/', '')).title}</h4>
-                    <h6>{ProjLinks.at(current.pathname.replace('/proj/', '')).link}</h6>
+                    <h4 style={{fontWeight:700}}>{ProjLinks.at(current.pathname.replace('/proj/', '')).title}</h4>
+                    <h6><a href={ProjLinks.at(current.pathname.replace('/proj/', '')).link} target='_blank' rel="noreferrer" className='truncate'>{ProjLinks.at(current.pathname.replace('/proj/', '')).link}</a> </h6>
                 </div>
 
                 <div className="proj-pres">
