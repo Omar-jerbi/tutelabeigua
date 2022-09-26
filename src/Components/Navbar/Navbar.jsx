@@ -8,7 +8,7 @@ function Navbar() {
 
 
     const changecolor = (e) => {
-        document.querySelectorAll('.nav-link-large').forEach((el) => { el.style.color = 'black'; el.style.fontWeight = 'unset' })
+        document.querySelectorAll('.nav-link-large').forEach((el) => { el.style.color = 'black'; el.style.fontWeight = '200' })
         e.target.style.color = '#808080'
         e.target.style.fontWeight = '600'
     }
@@ -38,11 +38,6 @@ function Navbar() {
                                     Home
                                 </Link></li>
                             <li className='col s12 m12'>
-                                <Link className='nav-link-small' to='/about' onClick={() => setSideNav(false)}>
-                                    About us
-                                </Link>
-                            </li>
-                            <li className='col s12 m12'>
                                 <Link className='nav-link-small' to='/projs' onClick={() => setSideNav(false)}>
                                     Progetti
                                 </Link>
@@ -50,6 +45,11 @@ function Navbar() {
                             <li className='col s12 m12'>
                                 <Link className='nav-link-small' to='/tutela' onClick={() => setSideNav(false)}>
                                     TutelaBeigua
+                                </Link>
+                            </li>
+                            <li className='col s12 m12'>
+                                <Link className='nav-link-small' to='/about' onClick={() => setSideNav(false)}>
+                                    Info
                                 </Link>
                             </li>
                         </ul>
@@ -71,11 +71,6 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='col l3'>
-                            <Link className='nav-link-large' to='/about' onClick={(e) => changecolor(e)} >
-                                About us
-                            </Link>
-                        </li>
-                        <li className='col l3'>
                             <Link className='nav-link-large' to='/projs' onClick={(e) => changecolor(e)} >
                                 Progetti
                             </Link>
@@ -83,6 +78,11 @@ function Navbar() {
                         <li className='col l3'>
                             <Link className='nav-link-large' to='/tutela' onClick={(e) => changecolor(e)} style={{ padding: '25px 0 0 0' }}>
                                 TutelaBeigua
+                            </Link>
+                        </li>
+                        <li className='col l3'>
+                            <Link className='nav-link-large' to='/about' onClick={(e) => changecolor(e)} >
+                                Info
                             </Link>
                         </li>
                     </ul>

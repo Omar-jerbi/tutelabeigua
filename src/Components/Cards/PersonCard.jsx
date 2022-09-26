@@ -13,7 +13,7 @@ function PersonCard({ image, nome, cognome, testo, email, link }) {
           <div className={`paragrafo-hidden ${toShow ? 'show' : ''}`}>
             <div className="top">
               <i class="fa-solid fa-x right" onClick={() => { setToShow(false); }}></i>
-              <h5 className='left' style={{ width: "min-content" }}>{nome} <br />{cognome}</h5>
+              <h5 className='left' style={{ width: "min-content" , fontWeight:500}}>{nome} <br />{cognome}</h5>
             </div>
             <p className="flow-text left">
               {testo}

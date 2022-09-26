@@ -8,7 +8,7 @@
 }
 
 .faq {
-    background-color: #EAEAEA;
+    background-image: linear-gradient(to bottom, #eaeaea 0%, #ffffff 100%);
     text-align: center;
     padding: 30px;
 }
@@ -77,11 +77,14 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.575);
+    background-color: rgba(0, 0, 0, 0.829);
     z-index: 999;
+    opacity: 1;
     left: 0;
     top: 0;
+    transition: all 500ms;
 }
+
 
 @media only screen and (max-width: 600px) {
     .pop-up-about-btts a {

@@ -13,7 +13,7 @@ const navigate = useNavigate();
             <div className="main-card">
                 
                 <div className="tit-card">
-                    <p className='flow-text'>{tit}</p>
+                    <p>{tit}</p>
                 </div>
                 
                 <div className="link-card">

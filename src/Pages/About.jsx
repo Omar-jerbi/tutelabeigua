@@ -49,7 +49,7 @@ function About() {
   return (
     <div className="about">
 
-      <div className="pop-up-about" style={{ display: cookie.get('pop') }}>
+      <div className="pop-up-about" style={{ opacity: cookie.get('pop') === 'none' ? '0' : '1', zIndex: cookie.get('pop') === 'none' ? '-10' : '999' }}>
         <div className="pop-up-about-main">
           <div className="pop-up-about-tit valign-wrapper">
             <h4 className='center-align'>Iscriviti alla nostra newsletter</h4>
@@ -76,7 +76,7 @@ function About() {
       </div>
 
 
-      <PageBanner pagetitle='About Us' image={imgbanner}></PageBanner>
+      <PageBanner pagetitle='Chi siamo' image={imgbanner}></PageBanner>
 
       <div className="container">
         <div className="logo-gruppo">
@@ -86,9 +86,9 @@ function About() {
             </div>
 
             <div className="col s12 m12 l12">
-              <h2>
-                Gruppo 77
-              </h2>
+              <h1 style={{ fontWeight: 700 }}>
+                Noi siamo <br /> il Gruppo 77
+              </h1>
             </div>
           </div>
         </div>
@@ -109,7 +109,7 @@ function About() {
 
 
         <div className="des">
-          <h3>Design:</h3>
+          <h3 style={{ fontWeight: 600 }}>Design:</h3>
           <div className="row">
             <div className="col l3 m12 s12">
               <PersonCard image={imggabr} cognome='Moggio' nome={'Gabriele'} testo={'Designer genovese, amo la contaminazione di visioni alternative alle mie... Il mio motto? NEVER GIVE UP!'}></PersonCard>
@@ -124,7 +124,7 @@ function About() {
         </div>
 
         <div className="dev">
-          <h3>Sviluppo:</h3>
+          <h3 style={{ fontWeight: 600 }}>Sviluppo:</h3>
           <div className="row">
             <div className="col l3 m12 s12">
               <PersonCard image={imgerik} cognome='Ricci' nome={'Erik'} testo={'Web developer e programmatore Android, C/C++ e Java'}></PersonCard>
@@ -140,7 +140,30 @@ function About() {
             </div>
           </div>
         </div>
+
+
+
+
+        <div className="sw-used">
+          <h3 style={{ fontWeight: 600 }}>Software e framework utilizzati:</h3>
+          <ul>
+            <li>
+              <p className='flow-text'>Figma</p>
+              <p className='flow-text'>React</p>
+              <p className='flow-text'>Materializa css</p>
+              <p className='flow-text'>Github</p>
+              <p className='flow-text'>AWS Route53 / S3 / Pipeline</p>
+            </li>
+          </ul>
+
+        </div>
       </div>
+
+
+
+
+
+
 
       <div className="faq">
         <div className="faq-tit">

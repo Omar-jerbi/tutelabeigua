@@ -28,26 +28,39 @@ function Projs() {
         </div>
 
 
-        <div className="pres-lab">
+        <div className="pres-lab show-on-medium-and-down hide-on-large-only">
           <div className="row">
-            <div className="col l6 m12 s12">
+            <div className="col m12 s12 center">
               <img src={lab} alt="" />
             </div>
-            <div className="col l6 m12 s12">
+            <div className="col m12 s12">
               <p className="flow-text">Il corso di Web Design è stato tenuto dal Prof. Andrea Vian. Sono stati coinvolti gli studenti del Dipartimento di Architettura e Design e di Informatica.</p>
               <p className="flow-text">Il corso si è posto l’obiettivo di realizzare alcuni progetti di intervento sull’attuale questione legata alla presenza dell’amianto sul Parco del Beigua.</p>
             </div>
           </div>
         </div>
 
-        <h3 style={{fontWeight:600}}>I progetti:</h3>
+
+        <div className="pres-lab show-on-large hide-on-med-and-down">
+          <div className="row valign-wrapper">
+            <div className="col l6 center">
+              <img src={lab} alt="" />
+            </div>
+            <div className="col l6">
+              <p className="flow-text">Il corso di Web Design è stato tenuto dal Prof. Andrea Vian. Sono stati coinvolti gli studenti del Dipartimento di Architettura e Design e di Informatica.</p>
+              <p className="flow-text">Il corso si è posto l’obiettivo di realizzare alcuni progetti di intervento sull’attuale questione legata alla presenza dell’amianto sul Parco del Beigua.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 style={{ fontWeight: 600 }}>I progetti:</h3>
 
         <div className="progetti row">
           {
             Projlist.map((v, k) => {
               return (
                 <div className="col s12 m6 l4">
-                  <ContentCard image={v.image} tit={v.tit} titlink='Info' link={'/proj/' + k.toString()}></ContentCard>
+                  <ContentCard image={v.image} tit={v.tit} titlink='Tap for more' link={'/proj/' + k.toString()}></ContentCard>
                 </div>
               )
             })

@@ -20,13 +20,13 @@ function Home() {
 
   return (
     <div className="home">
-      <PageBanner pagetitle='Tuteliamo il Beigua' image={img}></PageBanner>
+      <PageBanner pagetitle='Welcome on board!' image={img}></PageBanner>
 
       <div className="container">
         <div className="pres flow-text">
           <p className='flow-text'>
-            Ti diamo il benvenuto su tutelabeigua. Abbiamo raccolto i progetti degli studenti dell'universita di Genova
-            inerenti alla divulgazione sui pericoli ai quali e sottoposto parco del Beigua causati dalla concreta minaccia dell'amianto.
+            Ti diamo il benvenuto su tutelabeigua. Abbiamo raccolto progetti e iniziative degli studenti dell'universita di Genova
+            che hanno come obbiettivo quello di divulgare su tematiche strette al tuo vivere, e quello di tutti.          
           </p>
         </div>
 
@@ -43,12 +43,16 @@ function Home() {
               text2="I maggiori problemi sono legati all’apparato respiratorio e conducendo cosi alle gravose dipendenze di un tumore polmonare.L’abbattimento degli Alberi del Parco del Beigua contribuirebbe ad abbassare la qualità dell’aria respirata.">
             </ParagrafoHome>
             <ParagrafoHome
+              nobar={true}
               title="L'ambiente"
               text1="Un territorio il cui patrimonio geologico è tutelato dall'UNESCO. Con questo prestigioso riconoscimento si presenta il comprensorio del Beigua, la più vasta area naturale protetta della Liguria - che coinvolge i comuni di Arenzano, Campo"
               text2="Ligure, Cogoleto, Genova, Masone, Rossiglione, Sassello, Stella, Tiglieto e Varazze riconosciuto come sito UNESCO nell'ambito della prestigiosa lista dei Geoparchi mondiali (UNESCO Global Geoparks).">
             </ParagrafoHome>
           </div>
         </div>
+
+        <img className='img-par' src={img} alt="" srcset="" />
+
 
         <div className="cards">
           <div className="row">
@@ -59,7 +63,7 @@ function Home() {
               <ContentCard image={tb} tit='Cosa sai di TUTELABEIGUA?' link='/tutela' titlink='tutelabeigua' ></ContentCard>
             </div>
             <div className="col s12 m12 l4">
-              <ContentCard image={card77} tit='Scopri di più sul Gruppo77' link='/about' titlink='about us'></ContentCard>
+              <ContentCard image={card77} tit='Scopri di più sul Gruppo77' link='/about' titlink='Info'></ContentCard>
             </div>
           </div>
         </div>
