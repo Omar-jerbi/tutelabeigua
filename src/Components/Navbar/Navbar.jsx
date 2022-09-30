@@ -49,7 +49,7 @@ function Navbar() {
                             </li>
                             <li className='col s12 m12'>
                                 <Link className='nav-link-small' to='/about' onClick={() => setSideNav(false)}>
-                                    Info
+                                    About Us
                                 </Link>
                             </li>
                         </ul>
@@ -82,7 +82,7 @@ function Navbar() {
                         </li>
                         <li className='col l3'>
                             <Link className='nav-link-large' to='/about' onClick={(e) => changecolor(e)} >
-                                Info
+                                About Us
                             </Link>
                         </li>
                     </ul>

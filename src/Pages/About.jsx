@@ -14,11 +14,7 @@ import imgglucai from '../Img/lucai.png'
 import imggian from '../Img/gianlucan.jpeg'
 import SingleFaq from '../Components/SingleFaq/SingleFaq'
 import Cookies from 'universal-cookie';
-
-
-
-
-
+import emailjs from '@emailjs/browser'
 
 
 
@@ -29,6 +25,7 @@ function About() {
 
   const [popUp, setPopUp] = useState('block')
   const [cookie] = useState(new Cookies('pop', popUp, { path: '/' }))
+
 
 
 
@@ -55,14 +52,20 @@ function About() {
             <h4 className='center-align'>Iscriviti alla nostra newsletter</h4>
           </div>
           <div className="pop-up-about-mail">
-            <input type="email" placeholder='latua@email.abc' />
+            <input type="email" placeholder='latua@email.abc' id='inputmail' />
           </div>
           <div className="pop-up-about-btts">
             <div className="row">
               <div className="col l6 m6 s12 center">
                 <a className="waves-effect waves-light btn" onClick={() => {
-                  setCookiev()
-                  alert('Grazie per la tua iscrizione!')
+                  if (document.querySelector('#inputmail').value.toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+                    setCookiev()
+                    const newMail = { email: document.querySelector('#inputmail').value }
+                    emailjs.send('service_anz34ch', 'template_qnpfrdj', newMail, 'dUHqSwjzELg5lMfCQ');
+                    alert('Grazie per la tua iscrizione!')
+                  } else {
+                    alert('Email sbaglita')
+                  }
                 }}>Iscriviti</a>
               </div>
               <div className="col l6 m6 s12 center">
